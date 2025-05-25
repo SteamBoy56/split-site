@@ -2,99 +2,161 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Установка и ремонт сплит-систем</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Сплит-Системы | Установка, Ремонт, Обслуживание</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
+    * { box-sizing: border-box; }
     body {
-      font-family: Arial, sans-serif;
-      margin: 0; padding: 0;
-      background: #f0f2f5;
-      color: #333;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f7f9fc;
+      color: #222;
     }
     header {
-      background: #0077b6;
+      background: linear-gradient(135deg, #00b4d8, #0077b6);
       color: white;
-      padding: 40px 20px;
       text-align: center;
+      padding: 60px 20px;
     }
     header h1 {
-      margin: 0;
-      font-size: 32px;
+      font-size: 36px;
+      margin-bottom: 10px;
     }
     header p {
       font-size: 18px;
-      margin-top: 10px;
     }
     main {
-      padding: 40px 20px;
-      max-width: 800px;
+      max-width: 1000px;
       margin: auto;
-      background: white;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      padding: 40px 20px;
     }
     section {
-      margin-bottom: 30px;
+      margin-bottom: 40px;
     }
     h2 {
       color: #0077b6;
+      margin-bottom: 15px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li::before {
+      content: "✔️";
+      margin-right: 10px;
+      color: #00b4d8;
     }
     .cta {
       text-align: center;
-      margin-top: 30px;
+      margin-top: 20px;
     }
     .cta a {
+      display: inline-block;
       background: #00b4d8;
       color: white;
       padding: 12px 24px;
+      margin: 10px;
       text-decoration: none;
-      border-radius: 8px;
+      border-radius: 6px;
       font-weight: bold;
-      display: inline-block;
+      transition: background 0.3s;
+    }
+    .cta a:hover {
+      background: #0077b6;
+    }
+    .reviews {
+      background: #e9f5ff;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .review {
+      margin-bottom: 15px;
+      font-style: italic;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    input[type="submit"] {
+      background: #00b4d8;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background: #0077b6;
     }
     footer {
-      background: #0077b6;
-      color: white;
       text-align: center;
       padding: 20px;
+      background: #0077b6;
+      color: white;
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 28px; }
+      .cta a { width: 100%; margin: 5px 0; }
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Установка и ремонт сплит-систем</h1>
-  <p>Профессионально. Быстро. С гарантией.</p>
+  <h1>Монтаж и обслуживание сплит-систем</h1>
+  <p>Надёжно. Быстро. С гарантией.</p>
 </header>
 
 <main>
   <section>
-    <h2>Наши услуги</h2>
+    <h2>🔧 Наши услуги</h2>
     <ul>
-      <li>🛠 Установка новых сплит-систем</li>
-      <li>🔧 Диагностика и ремонт</li>
-      <li>🧼 Профилактическое обслуживание</li>
-      <li>🚚 Демонтаж и перенос оборудования</li>
+      <li>Установка и подключение</li>
+      <li>Промывка и чистка кондиционеров</li>
+      <li>Ремонт любой сложности</li>
+      <li>Обслуживание и диагностика</li>
     </ul>
   </section>
 
   <section>
-    <h2>Почему выбирают нас</h2>
+    <h2>👍 Почему выбирают нас</h2>
     <ul>
-      <li>✅ Опыт более 10 лет</li>
-      <li>✅ Сертифицированные специалисты</li>
-      <li>✅ Прозрачные цены, без скрытых платежей</li>
-      <li>✅ Работаем по договору, даём гарантию</li>
+      <li>10+ лет опыта</li>
+      <li>Гарантия до 3 лет</li>
+      <li>Работаем официально и по договору</li>
+      <li>Приезжаем день в день</li>
     </ul>
   </section>
 
-  <section class="cta">
-    <a href="tel:+79998887766">📞 Позвонить: +7 (999) 888-77-66</a><br/><br/>
-    <a href="mailto:info@split-service.ru">📧 Написать на email</a>
+  <section class="reviews">
+    <h2>💬 Отзывы клиентов</h2>
+    <div class="review">“Очень быстро приехали и всё сделали качественно! Рекомендую.” — Анна, Екатеринбург</div>
+    <div class="review">“Установили сплит за 2 часа, вежливые ребята.” — Иван, Пермь</div>
   </section>
+
+  <section>
+    <h2>📩 Оставьте заявку</h2>
+    <form action="mailto:your@email.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Ваше имя" required />
+      <input type="tel" name="phone" placeholder="Телефон для связи" required />
+      <textarea name="message" rows="4" placeholder="Опишите, что нужно установить или починить..."></textarea>
+      <input type="submit" value="Отправить заявку" />
+    </form>
+  </section>
+
+  <div class="cta">
+    <a href="tel:+79998887766"><i class="fas fa-phone"></i> Позвонить</a>
+    <a href="mailto:split@service.ru"><i class="fas fa-envelope"></i> Написать</a>
+  </div>
 </main>
 
 <footer>
-  &copy; 2025 Сплит-Сервис | Все права защищены
+  © 2025 Split-Service — Все права защищены
 </footer>
 
 </body>
